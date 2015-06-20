@@ -110,6 +110,8 @@ class Referrer
     {
         $this->check_setup();
         if (!isset($_COOKIE[$this->name]) && isset($_SERVER['HTTP_REFERER'])) {
+            if(strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']) === false)
+                return; //Do not add the referrer if it is from the same domain.
             $cookie_value = $_SERVER['HTTP_REFERER'];
             if ($this->encryption) {
                 //generate the encrypted cookie
