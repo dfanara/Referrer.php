@@ -34,6 +34,6 @@ $referrer->retrieve_referrer();
 That's it! There's really nothing to it.
 
 ### Dependencies
-In order to us Referrer.php, the mcrypt module must be enabled for PHP.
+In order to use Referrer.php, the mcrypt module must be enabled for PHP.
 
 Refferer.php was made by Daniel Fanara, and is licensed under the [GNU GPL v3](http://choosealicense.com/licenses/gpl-3.0/) license.
